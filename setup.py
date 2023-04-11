@@ -20,12 +20,12 @@ setup(
     name='saleos',
     use_scm_version=True,
     license='MIT License',
-    description='Sustainability Analytics for Low Earth Orbit Satellites',
+    description='object detection methods on air-based collection platforms',
     long_description=readme(),
     long_description_content_type="text/markdown",
-    author='Bonface Osoro/Ed Oughton',
+    author='Bonface Osoro/James Gallagher',
     author_email='bosoro@gmu.edu',
-    url='https://github.com/Bonface-Osoro/saleos',
+    url='https://github.com/Bonface-Osoro/odemacop',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -42,7 +42,8 @@ setup(
         'Topic :: Utilities',
     ],
     keywords=[
-        'sustainability','telecommunications', 'broadband', 'satellite'
+        'Thermal object detection', 'long wave infrared (LWIR)', 'RGB-LWIR, computer vision', 'FLIR',
+        'Uncrewed Aerial Systems (UAS)', 'Machine Learning', 'YOLO'
     ],
     setup_requires=[
         'setuptools_scm'
